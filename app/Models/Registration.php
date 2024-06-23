@@ -5,7 +5,11 @@ use Illuminate\Database\Eloquent\Model;
 use DB;
 
 class Registration extends Model
-{
+{   
+    function create_account($user_credentials){
+        return $user_credentials;
+    }
+
     function credentials_validation($account, $token){
         $presaved_token = $token;
         $hashed_token = hash('sha256', $token);
