@@ -23,7 +23,7 @@ class RegistrationController extends Controller
         return $response;
     }
 
-    protected funciton registration(Request $request){
+    protected function registration(Request $request){
         $registration = new Registration();
         $response = $registration->create_account($request);
         return $response;
