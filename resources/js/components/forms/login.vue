@@ -22,6 +22,19 @@
         })
       }
     },
+
+    methods: {
+      register(){
+        axios.post('/register/registration', this.form).then(response=>{
+          console.log(response.data.email);
+          console.log(response.data.password);
+        }).catch(error=>{
+          console.log(error.data);
+          this.loading=false;
+        })
+      }
+    },
+
     beforeMount(){
       this.get_accounts();
     }
