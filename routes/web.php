@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegistrationControlLer;
+
 
 Route::get('/', function () {
     session_start();
