@@ -25,5 +25,5 @@ Route::get('/images/{filename}', function($filename){
 });
 
 Route::post('/login/authentication', [LoginController::class, 'authentication']);
-
+Route:: post('/register/registration', [RegistrationControlLer::class, 'registration']);
 Route::get('/get_accounts', [LoginController::class, 'get_accounts']);
